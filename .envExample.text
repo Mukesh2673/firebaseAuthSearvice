@@ -1,0 +1,11 @@
+PORT=5000
+MONGO_URI=mongodb://localhost:27017/firebaseAuth
+FIREBASE_SERVICE_ACCOUNT= {
+  apiKey: "AIzaSyDWDmeEoKAb0cCN0pGZlYabwE-AyTutpRc",
+  authDomain: "authservice-20463.firebaseapp.com",
+  projectId: "authservice-20463",
+  storageBucket: "authservice-20463.firebasestorage.app",
+  messagingSenderId: "736381761941",
+  appId: "1:736381761941:web:da2a57284569680c60de9c",
+  measurementId: "G-3G0FDH0MNG"
+};
