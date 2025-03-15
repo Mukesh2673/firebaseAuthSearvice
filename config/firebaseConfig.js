@@ -1,11 +1,13 @@
 import admin from 'firebase-admin';
 import dotenv from 'dotenv';
-import ServiceAccountKey from './serviceAccountKey.json' assert { type: 'json' };
+import serviceAccount from './serviceAccountKey.json' assert { type: 'json' };
 
 dotenv.config();
 
-admin.initializeApp({
-  credential: admin.credential.cert(ServiceAccountKey),
-});
+if (!admin.apps.length) {
+  admin.initializeApp({
+    credential: admin.credential.cert(serviceAccount),
+  });
+}
 
 export default admin;
